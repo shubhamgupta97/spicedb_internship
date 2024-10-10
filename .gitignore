@@ -25,3 +25,4 @@ replay_pid*
 
 # properties file
 src/main/resources/config/application.properties
+target/classes/config/application.properties
