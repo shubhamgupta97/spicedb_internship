@@ -34,7 +34,7 @@ public class SpiceDBClient {
         schemaService = SchemaServiceGrpc.newBlockingStub(channel)
                 .withCallCredentials(bearerToken);
         permissionsService = PermissionsServiceGrpc.newBlockingStub(channel)
-                .withCallCredentials(new BearerToken(token));
+                .withCallCredentials(bearerToken);
 	}
 
 	public String writeSchema(String schema) {
