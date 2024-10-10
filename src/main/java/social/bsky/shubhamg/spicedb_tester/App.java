@@ -26,8 +26,9 @@ public class App {
     	readProperties("application.properties");
     	
     	String accessToken = properties.getProperty("access.token");
+    	String target = properties.getProperty("target");
     	
-    	System.out.println(accessToken);
+    	SpiceDBClient spiceDBClient = new SpiceDBClient(accessToken, target);
     	
     }
 }
