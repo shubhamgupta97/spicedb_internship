@@ -7,4 +7,5 @@ Create a file called `application.properties` in path src/main/resources/config 
 ```
 access.token=token_created_for_permission_system  
 target=target_authzed_spicedb_instance
+permission.system=object_prefix_of_permission_system
 ```
